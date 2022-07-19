@@ -21,4 +21,25 @@ h(rk) : histogram of digital image with gray levels rk
 
 ## Normalized Histogram
 
-dividing number of pixels at gray level rk by the total number of pixels in the image, p(rk) = nk / n
+- dividing number of pixels at gray level rk by the total number of pixels in the image, p(rk) = nk / n, For k=0,1,...,L-1
+- p(rk) = gives an estimate of the probability of occurrence of gray level rk
+- The sum of all components of a normalized histogram is equal to 1
+
+## Histogram Processing
+- ⮚ Basic for numerous spatial domain processing techniques
+- ⮚ Used effectively for image enhancement
+- ⮚ Information inherent in histograms also is useful in image compression and segmentation
+
+Dark image - components of histogram are concentrated on the low side of the gray scale
+![image](https://user-images.githubusercontent.com/59027621/179795040-2222f1fc-4379-4896-be17-9ffce59210fd.png)
+
+Bright image - components of histogram are concentrated on the high side of the gray scale
+![image](https://user-images.githubusercontent.com/59027621/179795086-9ae6cabd-9bac-4d1f-b74b-ad3fe3d23e69.png)
+
+Low-contrast image - histogram is narrow and centered toward the middle of the gray scale
+![image](https://user-images.githubusercontent.com/59027621/179795338-79ccfd97-ee16-418f-a579-4b16bccf1839.png)
+
+High-contrast image - histogram covers broad range of the gray scale and the distribution of pixels is not too far from uniform, with very few
+vertical lines being much higher than the others
+![image](https://user-images.githubusercontent.com/59027621/179795483-999faa64-ee6f-4b58-b943-c464ee519bc1.png)
+
