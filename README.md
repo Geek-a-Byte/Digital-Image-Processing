@@ -89,5 +89,11 @@ Strictly monotonically increasing function. this is a one to one mapping, both w
 - Thus, CDF satisfies the condition (a)
 - We can use CDF as a transformation function
 
+## Histogram Equalization
+- As the low-contrast image’s histogram is narrow and centered toward the middle of the gray scale, if we  distribute the histogram to a wider range the quality if  the image will be improved.
+- We can do it by adjusting the probability density function of the original histogram of the image so that the probability spread equality.
+- Equalization can be achieved by the following
+
+![image](https://user-images.githubusercontent.com/59027621/179831782-a08b5c88-89c7-40ec-9f84-a50b9205ed51.png)
 
 
