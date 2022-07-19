@@ -128,6 +128,8 @@ Strictly monotonically increasing function. this is a one to one mapping, both w
 - Histograms processing methods are global processing, in the sense that pixels are modified by a transformation function based in the gray-level content of an entire image.
 - Sometimes, we may need to enhance details over small areas in an image, which in called a local enhancement.
 
+## Local Enhancement
+
 ![image](https://user-images.githubusercontent.com/59027621/179840570-833f3b0b-ea67-4f7c-800a-1dce721401fd.png)
 
 - Define a square or rectangular neighborhood and move the center of this area from pixel to pixel.
