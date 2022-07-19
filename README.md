@@ -75,4 +75,4 @@ Strictly monotonically increasing function. this is a one to one mapping, both w
 
 ![image](https://user-images.githubusercontent.com/59027621/179804780-bad58f7f-d36c-4258-aa1e-9954146caeee.png)
 
-
+## Histogram and Probability Density Function)
