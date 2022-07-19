@@ -136,4 +136,33 @@ Strictly monotonically increasing function. this is a one to one mapping, both w
 - At each location, the histogram of the points in the neighborhood is computed and either histogram equalization or histogram specification transformation function is obtained.
 - Another approach used to reduce computation is to utilize nonoverlapping  regions, but it usually produces an undesirable “blocky” effect.
 
+## Histogram Statistics for Image Enhancement
+
+![image](https://user-images.githubusercontent.com/59027621/179858343-2e2dbf36-eb1c-46b6-9bdc-2405168180ad.png)
+
+## Enhancement using  Arithmetic/Logic Operations
+
+- Arithmetic/Logic operations perform on pixel by pixel basis between two or more images
+- except NOT operation which perform only on a single image
+- Logic operation performs on gray-level images, the pixel values are processed as binary numbers
+- light represents a binary 1, and dark represents a binary 0
+- NOT operation = negative transformation
+
+![image](https://user-images.githubusercontent.com/59027621/179858967-23b89604-8cc2-4a7a-ae58-30df7208ec37.png)
+
+## Image Subtraction
+
+![image](https://user-images.githubusercontent.com/59027621/179859428-b982d0d6-bf33-4639-855e-7f4d4cfddb36.png)
+
+## Notes 
+
+- We may have to adjust the gray-scale of the subtracted  image to be [0,255] (if 8-bit is used)
+- first, find the minimum gray value of the subtracted image
+- second, find the maximum gray value of the subtracted image
+- Set the minimum value to be zero and the maximum to be 255
+- While the rest are adjusted according to the interval [0,255], by timing each value with 255/max
+
+![image](https://user-images.githubusercontent.com/59027621/179860425-0a94f04b-bfda-4ef9-9876-657ecf24dc20.png)
+
+
 
