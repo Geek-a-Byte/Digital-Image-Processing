@@ -33,6 +33,8 @@ h(rk) : histogram of digital image with gray levels rk
 Dark image - components of histogram are concentrated on the low side of the gray scale
 ![image](https://user-images.githubusercontent.com/59027621/179795040-2222f1fc-4379-4896-be17-9ffce59210fd.png)
 
+
+
 Bright image - components of histogram are concentrated on the high side of the gray scale
 ![image](https://user-images.githubusercontent.com/59027621/179795086-9ae6cabd-9bac-4d1f-b74b-ad3fe3d23e69.png)
 
@@ -56,3 +58,9 @@ T(r) satisfies
 - T(r) is single-vlaued and monotonically increasing in the interval 0 ≤ r ≤ 1
 - 0 ≤ T(r) ≤ 1 for 0 ≤ r ≤ 1
 
+## Conditions for T(r)
+
+- Single-valued (one-to-one relationship) guarantees that the inverse transformation will exist
+- Monotonicity condition preserves that output intensity values will never be less than the corresponding input values, thus preventing artifacts created by reversals.
+- 0 ≤ T(r) ≤ 1 for 0 ≤ r ≤ 1 guarantees that the output gray levels will be in the same range as the input levels.
+- The inverse transformation from s back to r is r = T^-1(s) ; 0 ≤ s ≤ 1
