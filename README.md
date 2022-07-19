@@ -64,3 +64,15 @@ T(r) satisfies
 - Monotonicity condition preserves that output intensity values will never be less than the corresponding input values, thus preventing artifacts created by reversals.
 - 0 ≤ T(r) ≤ 1 for 0 ≤ r ≤ 1 guarantees that the output gray levels will be in the same range as the input levels.
 - The inverse transformation from s back to r is r = T^-1(s) ; 0 ≤ s ≤ 1
+
+![image](https://user-images.githubusercontent.com/59027621/179803004-b307787e-52ca-4f46-b526-34fad6448b48.png)
+
+Monotonically increasing function, showing how multiple values can map to a single value
+
+![image](https://user-images.githubusercontent.com/59027621/179804516-cead1d94-5521-4823-a5ac-49aac7d4dbce.png)
+
+Strictly monotonically increasing function. this is a one to one mapping, both ways.
+
+![image](https://user-images.githubusercontent.com/59027621/179804780-bad58f7f-d36c-4258-aa1e-9954146caeee.png)
+
+
