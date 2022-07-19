@@ -39,7 +39,20 @@ Bright image - components of histogram are concentrated on the high side of the 
 Low-contrast image - histogram is narrow and centered toward the middle of the gray scale
 ![image](https://user-images.githubusercontent.com/59027621/179795338-79ccfd97-ee16-418f-a579-4b16bccf1839.png)
 
-High-contrast image - histogram covers broad range of the gray scale and the distribution of pixels is not too far from uniform, with very few
-vertical lines being much higher than the others
+High-contrast image - histogram covers broad range of the gray scale and the distribution of pixels is not too far from uniform, with very few vertical lines being much higher than the others
+
 ![image](https://user-images.githubusercontent.com/59027621/179795483-999faa64-ee6f-4b58-b943-c464ee519bc1.png)
+
+## Histogram Transformation
+
+A gray-level transformation function S=T(r) Where 0 ≤ r ≤ 1, that is both single-valued and monotonically increasing
+
+![image](https://user-images.githubusercontent.com/59027621/179798033-0c35fc3a-be14-4e37-8f5f-be5d47c82ea7.png)
+
+<br>
+T(r) satisfies
+<br>
+
+- T(r) is single-vlaued and monotonically increasing in the interval 0 ≤ r ≤ 1
+- 0 ≤ T(r) ≤ 1 for 0 ≤ r ≤ 1
 
