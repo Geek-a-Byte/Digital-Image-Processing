@@ -76,3 +76,18 @@ Strictly monotonically increasing function. this is a one to one mapping, both w
 ![image](https://user-images.githubusercontent.com/59027621/179804780-bad58f7f-d36c-4258-aa1e-9954146caeee.png)
 
 ## Histogram and Probability Density Function)
+
+- The gray levels in an image may be viewed as random variables in the  interval [0,1]
+- The normalized histogram may viewed as a Probability Density Function (PDF)
+- A cumulative distribution function (CDF) of random variable r : where w is a dummy variable of integration , Note that T(r) depends on pr(r)
+- Transformation Function -
+![image](https://user-images.githubusercontent.com/59027621/179829893-7db43ec0-0e09-44ba-941c-9cb0c19f1c56.png)
+
+## Cumulative Distributive Function
+- CDF is an integral of a probability function (always positive) is the area under the function
+- Thus, CDF is always single valued and monotonically increasing
+- Thus, CDF satisfies the condition (a)
+- We can use CDF as a transformation function
+
+
+
