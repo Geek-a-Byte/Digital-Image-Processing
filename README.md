@@ -108,3 +108,30 @@ Strictly monotonically increasing function. this is a one to one mapping, both w
 
 ✔ Image is dominated by large, dark areas, resulting in a histogram characterized by a large concentration of pixels in pixels in the dark end of  the gray scale
 
+![image](https://user-images.githubusercontent.com/59027621/179835500-8510c305-0b08-46d0-8985-dab04e02629e.png)
+
+✔ The histogram equalization doesn’t make the  result image look better than the original image.  Consider the histogram of the result image, the net  effect of this method is to map a very narrow interval  of dark pixels into the upper end of the gray scale of  the input image. As a consequence, the output image  is light and has a washed-out appearance.
+
+## Histogram Specification (Matching)
+
+- Histogram equalization has a disadvantage which is that it can generate only one type of output image.
+- With Histogram Specification, we can specify the shape of the histogram that we wish the output image to have.
+- It doesn’t have to be a uniform histogram
+
+![image](https://user-images.githubusercontent.com/59027621/179839632-da67788e-7d07-4003-9113-5c7bb1cc5663.png)
+![image](https://user-images.githubusercontent.com/59027621/179839767-fd1cfe2c-87bd-4e66-b592-828b030cf294.png)
+
+✔ Notice that the output histogram’s  low end has shifted right toward the  lighter region of the gray scale as  desired.
+
+- Histogram specification is a trial-and-error process
+- There are no rules for specifying histograms, and one must resort to analysis on a case-by-case basis for any given enhancement task.
+- Histograms processing methods are global processing, in the sense that pixels are modified by a transformation function based in the gray-level content of an entire image.
+- Sometimes, we may need to enhance details over small areas in an image, which in called a local enhancement.
+
+![image](https://user-images.githubusercontent.com/59027621/179840570-833f3b0b-ea67-4f7c-800a-1dce721401fd.png)
+
+- Define a square or rectangular neighborhood and move the center of this area from pixel to pixel.
+- At each location, the histogram of the points in the neighborhood is computed and either histogram equalization or histogram specification transformation function is obtained.
+- Another approach used to reduce computation is to utilize nonoverlapping  regions, but it usually produces an undesirable “blocky” effect.
+
+
