@@ -96,4 +96,15 @@ Strictly monotonically increasing function. this is a one to one mapping, both w
 
 ![image](https://user-images.githubusercontent.com/59027621/179831782-a08b5c88-89c7-40ec-9f84-a50b9205ed51.png)
 
+![image](https://user-images.githubusercontent.com/59027621/179832187-946bc1bb-3e56-412a-aec3-85baf1a4741a.png)
+![image](https://user-images.githubusercontent.com/59027621/179833789-a0c1258c-d8f8-4c9f-8565-00bf4c5dc9cf.png)
+![image](https://user-images.githubusercontent.com/59027621/179833832-b79fae27-d269-4710-bf0e-c7745f70629f.png)
+
+- image vs histogram equalized image
+
+![image](https://user-images.githubusercontent.com/59027621/179833895-05e699d3-571c-4c64-9f21-09d0df7a38d8.png)
+
+![image](https://user-images.githubusercontent.com/59027621/179834504-f7560f1d-f7b9-45f5-b236-f0fd610c9d36.png)
+
+✔ Image is dominated by large, dark areas, resulting in a histogram characterized by a large concentration of pixels in pixels in the dark end of  the gray scale
 
