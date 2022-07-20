@@ -195,8 +195,11 @@ Strictly monotonically increasing function. this is a one to one mapping, both w
 - Output is simply the average of the pixels contained in the neighborhood of the filter mask.
 - Called averaging filters or lowpass filters.
 
-## 3x3 Smoothing Linear Filters
+## 3x3 Smoothing Linear Filters / Box Filters
+
 ![image](https://user-images.githubusercontent.com/59027621/179873033-1cba93cd-aa96-4803-ae13-55b5218ec554.png)
+![image](https://user-images.githubusercontent.com/59027621/179884760-548ae0f6-abc4-49d2-9156-70f162448c56.png)
+
 
 ## Weighted Average:
 the center is the most important and  other pixels are inversely weighted as a  function of their distance from the  center of the mask
@@ -215,8 +218,16 @@ the center is the most important and  other pixels are inversely weighted as a  
 ## Real life example of image smoothing
 
 ![image](https://user-images.githubusercontent.com/59027621/179873919-ced2c958-474f-437f-b6bb-e41be7ade159.png)
+![image](https://user-images.githubusercontent.com/59027621/179884988-fe0c1611-c396-4cdb-ac69-f0da3fd814a2.png)
+![image](https://user-images.githubusercontent.com/59027621/179885058-72e5e246-083e-4ce7-afb4-5e12203f8626.png)
+
 
 ## Order-Statistics Filters/ Non-linear filters
+
+![image](https://user-images.githubusercontent.com/59027621/179885123-281944ad-3472-4082-89e0-05012df77879.png)
+![image](https://user-images.githubusercontent.com/59027621/179885181-b02ebf76-96a1-47e8-8a42-ae56db6b29a7.png)
+![image](https://user-images.githubusercontent.com/59027621/179885426-076cb0c5-cff2-40b2-8bc4-0db2a1e86830.png)
+
 
 The response is based on ordering (ranking) the pixels contained in the image area encompassed by  the filter
 
@@ -241,6 +252,9 @@ Note : nxn is the size of the mask
 - Forced to have the value equal the median intensity of the neighbors.
 - Larger clusters are affected considerably less
 
+![image](https://user-images.githubusercontent.com/59027621/179886162-81bff26d-951a-4bb6-aa05-975eff9ec43d.png)
+
+
 ## Example
 ![image](https://user-images.githubusercontent.com/59027621/179875358-590177a1-f411-44e8-acae-011d5a3badf9.png)
 
@@ -248,6 +262,9 @@ Note : nxn is the size of the mask
 ### Objectives:
 - to highlight fine detail in an image
 - to enhance detail that has been blurred, either in error or as a natural effect of a particular method of image acquisition
+
+![image](https://user-images.githubusercontent.com/59027621/179886717-2543eff2-ace5-4e23-82d1-ebf19eee44ea.png)
+
 
 ## Blurring VS Sharpening
 
