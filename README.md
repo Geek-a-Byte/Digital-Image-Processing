@@ -201,7 +201,92 @@ Strictly monotonically increasing function. this is a one to one mapping, both w
 ## Weighted Average:
 the center is the most important and  other pixels are inversely weighted as a  function of their distance from the  center of the mask
 
+## general form of smoothing mask
+
+![image](https://user-images.githubusercontent.com/59027621/179873439-9759059c-835e-48ed-b348-f61b283a6f06.png)
+
+## Image Smoothing
+
+- Big mask is used to eliminate small objects from an image
+- The size of the mask establishes that relative size of the objects that will be blended with the background.
+
+![image](https://user-images.githubusercontent.com/59027621/179873817-c856be1f-faea-49b8-afc0-491f7137dd00.png)
+
+## Real life example of image smoothing
+
+![image](https://user-images.githubusercontent.com/59027621/179873919-ced2c958-474f-437f-b6bb-e41be7ade159.png)
+
+## Order-Statistics Filters/ Non-linear filters
+
+The response is based on ordering (ranking) the pixels contained in the image area encompassed by  the filter
+
+## Example
+
+```
+median filter : R=median{Zk | k=1,2,…,nxn}
+max filter : R=max{Zk | k=1,2,…,nxn}
+min filter : R=min{Zk | k=1,2,…,nxn}
+Note : nxn is the size of the mask
+```
+
+## Median Filters
+
+- Replaces the value of a pixel by the median of the gray levels in the neighborhood of that pixel <br> 
+  ( the original value of the pixel is included in the computation of the median )
+- Popular because for certain types of random noise  (impulse noise → salt and pepper noise), 
+- they provide excellent noise-reduction capabilities, with considering less blurring than linear smoothing filters of similar size.
+- The median represents the 50th percentile of a ranked set of numbers
+- Forces the points with distinct gray levels to be more like their neighbors.
+- Isolated clusters of pixels that are light or dark with respect to their neighbors, and whose area is less than n^2/2 (one-half the filter area),  <br> are eliminated by an n x n median filter.
+- Forced to have the value equal the median intensity of the neighbors.
+- Larger clusters are affected considerably less
+
+## Example
+![image](https://user-images.githubusercontent.com/59027621/179875358-590177a1-f411-44e8-acae-011d5a3badf9.png)
+
+## Sharpening Median Filters
+### Objectives:
+- to highlight fine detail in an image
+- to enhance detail that has been blurred, either in error or as a natural effect of a particular method of image acquisition
+
+## Blurring VS Sharpening
+
+- as we know that blurring can be done in spatial domain by pixel averaging in a neighbors
+- since averaging is analogous to integration
+- thus, we can guess that the sharpening must be accomplished by spatial differentiation.
+
+## Derivative Operator
+
+- the strength of the response of a derivative operator is proportional to the degree of discontinuity of the image at the point at which the operator is applied.
+- thus, image differentiation 
+	- enhances edges and other discontinuities (noise) 
+	- deemphasizes area with slowly varying gray-level values.
+
+## First Order Derivative
+
+![image](https://user-images.githubusercontent.com/59027621/179876965-e7b8a560-faf1-44fa-90d0-481802ac1ef8.png)
+
+## Second Order Derivative
+
+![image](https://user-images.githubusercontent.com/59027621/179877184-b33b459b-3044-4d88-b8e4-0d872ece102e.png)
+
+## First and Second Order Derivative of F(X,Y)
+![image](https://user-images.githubusercontent.com/59027621/179880694-1b83c4cf-3e0d-4180-aca9-8232d6ac97cc.png)
+
+## Discrete Form of Laplacian
+![image](https://user-images.githubusercontent.com/59027621/179881006-401c6935-d860-402c-b4be-a162a1a6380b.png)
+
+![image](https://user-images.githubusercontent.com/59027621/179881097-ce64ca75-2b57-4c5c-8021-ec2c75f38e08.png)
 
 
+![image](https://user-images.githubusercontent.com/59027621/179881133-6e6819ec-9bf9-48e7-a197-e2feeb4e59ff.png)
+
+
+![image](https://user-images.githubusercontent.com/59027621/179881992-25b97e1d-a7d0-48e5-a25c-c77dcdeed0bd.png)
+![image](https://user-images.githubusercontent.com/59027621/179882021-13528b1c-c96a-4631-8a6a-375a4c84cdb4.png)
+![image](https://user-images.githubusercontent.com/59027621/179882390-d505978a-d0f9-40d9-99a6-fe6a51d8de85.png)
+![image](https://user-images.githubusercontent.com/59027621/179882781-61c8cd03-00ab-4457-b82b-c76ef52ca31d.png)
+
+![image](https://user-images.githubusercontent.com/59027621/179882760-ae321a9f-7872-4a14-af1e-a94f9a35095b.png)
 
 
