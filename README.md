@@ -182,6 +182,25 @@ Strictly monotonically increasing function. this is a one to one mapping, both w
 - at each point (x,y), the response of the filter at that point is calculated using a predefined characteristics.
 
 ![image](https://user-images.githubusercontent.com/59027621/179868865-cfe62f1b-abe2-437a-853b-66e171486bfb.png)
+![image](https://user-images.githubusercontent.com/59027621/179873336-7acd5e6e-30fa-4913-8101-60632d6b5e4a.png)
+
+
+## Smoothing Spacial Filters
+
+- Used for blurring and for noise reduction
+- Blurring is used in preprocessing steps, such as
+	- removal of small details from an image prior to object extraction
+  - bridging of small gaps in lines or curves
+- Noise reduction can be accomplished by blurring with a linear filter and also by a nonlinear filter
+- Output is simply the average of the pixels contained in the neighborhood of the filter mask.
+- Called averaging filters or lowpass filters.
+
+## 3x3 Smoothing Linear Filters
+![image](https://user-images.githubusercontent.com/59027621/179873033-1cba93cd-aa96-4803-ae13-55b5218ec554.png)
+
+## Weighted Average:
+the center is the most important and  other pixels are inversely weighted as a  function of their distance from the  center of the mask
+
 
 
 
