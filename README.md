@@ -166,4 +166,23 @@ Strictly monotonically increasing function. this is a one to one mapping, both w
 
 ![image](https://user-images.githubusercontent.com/59027621/179865528-17c22fbf-983d-4c2b-9548-0c820f1ffe9b.png)
 
+## Spatial Filtering
+
+- use filter (can also be called  as mask/kernel/template or  window)
+- the values in a filter  subimage are referred to as  coefficients, rather than pixel
+- our focus will be on masks of  odd sizes, e.g. 3x3, 5x5,…
+- g(x,y) = summation(filter coeefs * pixels of image section under the filter mask)
+
+![image](https://user-images.githubusercontent.com/59027621/179868549-dfa081e8-160b-4f05-96f1-6f166c057a1b.png)
+![image](https://user-images.githubusercontent.com/59027621/179868561-ace7bad5-5c8f-464f-a42a-9e04cb3a64e0.png)
+
+## Vector Representation of Linear Filtering
+
+- simply move the filter mask from point to point in an image.
+- at each point (x,y), the response of the filter at that point is calculated using a predefined characteristics.
+
+![image](https://user-images.githubusercontent.com/59027621/179868865-cfe62f1b-abe2-437a-853b-66e171486bfb.png)
+
+
+
 
