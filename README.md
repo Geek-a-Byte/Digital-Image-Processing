@@ -164,5 +164,6 @@ Strictly monotonically increasing function. this is a one to one mapping, both w
 
 ![image](https://user-images.githubusercontent.com/59027621/179860425-0a94f04b-bfda-4ef9-9876-657ecf24dc20.png)
 
+![image](https://user-images.githubusercontent.com/59027621/179865528-17c22fbf-983d-4c2b-9548-0c820f1ffe9b.png)
 
 
