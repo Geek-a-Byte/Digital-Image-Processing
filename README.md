@@ -1,4 +1,5 @@
 # DIP Theory 
+- [Comparison of Ideal Low Pass Filter, Butterworth Low Pass Filter and Gaussian Low Pass Filter](https://www.youtube.com/watch?v=MIDnZpKu8D8)
 
 
 ## Histogram Processing
